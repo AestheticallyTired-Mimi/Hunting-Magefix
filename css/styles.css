@@ -1,0 +1,902 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0; 
+    background-color: #080826;
+}
+.container{
+    font-family: "Helvetica", "Futura", "Inter", sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    z-index: 999;
+}
+.head-left{
+    display: flex;
+    align-items: center;
+}
+.head-left img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.head-right{
+    display: flex;
+}
+.head-right a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hero-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-vid{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.hero-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-content{
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    align-items: center;
+}
+.hero-content h1{
+    font-family: "Alfarn", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #c9f7ef;
+}
+.hero-content p{
+    color: white;
+    max-width: 500px;
+    margin-bottom: 10px;
+}
+.hero-content a{
+    background-color: hsl(240, 100%, 65%);
+    border: 2px solid #4b4bff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.play-btn{
+    font-size: 20px;
+}
+.hero-content button:hover{
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 15px #4b4bff;
+}
+.abt-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    display: flex;
+}
+.abt-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.abt-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.abt-grid{
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding: 50px;
+    margin: 10px;
+}
+.abt-card{
+    height:auto;
+    object-fit: cover;
+    padding: 50px;
+}
+.abt-card h1{
+    font-size: 60px;
+    display: flex;
+    font-family: "Alfarn", sans-serif;
+    font-weight: 600;
+}
+.abt-card p{
+    font-size: 14px;
+    text-align: justify;
+    bottom: 30px;
+    padding: 0;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
+}
+.abt-card button{
+    background-color: #4b4bff;
+    border: 2px solid #4b4bff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.abt-btn{
+    font-size: 20px;
+}
+.abt-card button:hover{
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 15px #4b4bff;
+}
+.abt-card img{
+    margin-left: 50px;
+    height: 350px;
+    width: auto;
+    object-fit: cover;
+    animation: float 3s ease-in-out infinite;
+    align-content: center;
+}
+
+.about-section{
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.about-section h1{
+    font-family: 'Alfarn', sans-serif;
+    font-weight: 600;
+    font-size: 100px;
+    max-width: 1150px;
+    text-align: center;
+    margin: 25px 0;
+}
+.about-section p{
+    font-size: 18px;
+    text-align: center;
+    margin: 50px;
+}
+
+.faelora-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.faelora-vid{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.faelora-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.faelora-content{
+    z-index: 1;
+    position: absolute;
+    width: 380px;
+    top: 150px;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faelora-content h3{
+    font-family: 'Alfarn', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+}
+.faelora-content p{
+    font-size: 14px;
+}
+
+.char-section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin-top: 80px;
+}
+.char-section h3{
+    font-family: 'Alfarn', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.char-cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.card{
+    position: relative;
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    border: 0.5px solid #7a7a7c67;
+    border-radius: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card h2{
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    left: 5%;
+    font-family: 'Alfarn', sans-serif;
+    font-weight: normal;
+    z-index: 1;
+}
+.card p{
+    position: absolute;
+    top: 30px;
+    left: 5%;
+    z-index: 1;
+    max-width: 250px;
+    color: #c5c5f8;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover{
+    box-shadow: 0 0 15px white;
+}
+
+.contact-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.contact-section h3{
+    font-family: 'Alfarn', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.contact-grid{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 20px;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.contact-cards{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    background-color: #0e0e69;
+    box-shadow: 0 0 5px #4b4bff;
+    border-radius: 20px;
+}
+.contact-cards video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact-cards form{
+    margin-left: 20px;
+    padding: 30px 20px;
+}
+input[type="submit"]{
+    background-color: #4b4bff;
+    border: 2px solid #4b4bff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+}
+input[type="submit"]:hover{
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 15px #4b4bff;
+}
+input[type="text"]{
+    width:400px; 
+    height:25px;
+    border-radius: 5px;
+    background-color: #c9f7ef;
+}
+textarea {
+  width: 410px;
+  height: 70px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #c9f7ef;
+}
+
+#particle-container{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+}
+.particle{
+    position:absolute;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#ffe08a;
+
+    box-shadow:
+        0 0 10px #ffe08a,
+        0 0 20px #ffe08a;
+
+    opacity:0.7;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+
+    0%{
+        transform:
+        translateY(0px)
+    }
+
+    50%{
+        transform:
+        translateY(-30px)
+    }
+
+    100%{
+        transform:
+        translateY(0px)
+    }
+
+}
+.particle{
+    filter: blur(2px);
+}
+
+
+.autoBlur{
+    animation: autoBlurAnimation liner both;
+    animation-timeline: view();
+}
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    40%,60%{
+        filter: blur(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        filter: blur(40px);
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+ 
+    /* Header */
+    .head-right a {
+        margin-left: 14px;
+        font-size: 14px;
+    }
+ 
+    /* Hero */
+    .hero-content {
+        left: 30px;
+        top: 120px;
+    }
+    .hero-content h1 {
+        font-size: 38px;
+    }
+ 
+    /* About (abt) section */
+    .abt-section {
+        height: auto;
+        min-height: 100vh;
+    }
+    .abt-grid {
+        position: relative;
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        margin: 0;
+    }
+    .abt-card {
+        padding: 20px;
+    }
+    .abt-card h1 {
+        font-size: 40px;
+    }
+    .abt-card img {
+        margin-left: 0;
+        height: 250px;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
+ 
+    /* About section */
+    .about-section {
+        margin-top: 80px;
+    }
+    .about-section h1 {
+        font-size: 60px;
+        max-width: 90%;
+    }
+ 
+    /* Faelora */
+    .faelora-content {
+        left: 60px;
+        width: 300px;
+    }
+    .faelora-content h3 {
+        font-size: 30px;
+    }
+ 
+    /* Characters */
+    .char-section {
+        width: 90%;
+    }
+    .char-section h3 {
+        font-size: 36px;
+    }
+    .char-cards {
+        grid-template-columns: auto auto;
+    }
+ 
+    /* Contact */
+    .contact-section {
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .contact-section h3 {
+        font-size: 36px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    .contact-cards {
+        height: auto;
+        min-height: 300px;
+    }
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact-cards form {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+ 
+/* =============================================
+   MOBILE — max-width: 600px
+   ============================================= */
+@media screen and (max-width: 600px) {
+ 
+    /* Header — hide nav links, show only logo */
+    header {
+        padding: 10px 16px;
+        flex-wrap: wrap;
+    }
+    .head-right {
+        display: none; /* hide desktop nav on mobile */
+    }
+    .head-left img {
+        width: 38px;
+        height: 38px;
+    }
+ 
+    /* Hero */
+    .hero-content {
+        left: 16px;
+        right: 16px;
+        top: 100px;
+    }
+    .hero-content h1 {
+        font-size: 26px;
+    }
+    .hero-content p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .hero-content a {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+ 
+    /* Abt section */
+    .abt-section {
+        height: auto;
+        min-height: auto;
+        margin-top: 30px;
+    }
+    .abt-img {
+        height: 400px;
+    }
+    .abt-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 16px;
+        gap: 10px;
+    }
+    .abt-card {
+        padding: 16px;
+    }
+    .abt-card h1 {
+        font-size: 28px;
+    }
+    .abt-card p {
+        font-size: 13px;
+    }
+    .abt-card img {
+        height: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+    .abt-card button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+ 
+    /* About section */
+    .about-section {
+        margin-top: 50px;
+    }
+    .about-section h1 {
+        font-size: 32px;
+        max-width: 90%;
+        margin: 16px 0;
+    }
+    .about-section p {
+        font-size: 14px;
+        margin: 20px 16px;
+    }
+ 
+    /* Faelora */
+    .faelora-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding: 24px 16px;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: flex-start;
+        background: linear-gradient(to top, rgba(8,8,38,0.85), transparent);
+    }
+    .faelora-section {
+        height: auto;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .faelora-content h3 {
+        font-size: 24px;
+    }
+    .faelora-content p {
+        font-size: 13px;
+    }
+ 
+    /* Characters */
+    .char-section {
+        width: 92%;
+        margin-top: 40px;
+    }
+    .char-section h3 {
+        font-size: 28px;
+    }
+    .char-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .card h2 {
+        font-size: 14px;
+    }
+    .card p {
+        font-size: 11px;
+        max-width: 90%;
+    }
+ 
+    /* Contact */
+    .contact-section {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .contact-section h3 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        width: 92%;
+        margin: 20px auto 0;
+        gap: 16px;
+    }
+    .contact-cards {
+        height: auto;
+        min-height: 260px;
+    }
+    .contact-cards form {
+        margin-left: 0;
+        padding: 16px;
+    }
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+ 
+    /* Footer */
+    footer {
+        padding: 16px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+ 
+    /* Header — hide nav links, show only logo */
+    header {
+        padding: 10px 16px;
+        flex-wrap: wrap;
+    }
+    .head-right {
+        display: none; /* hide desktop nav on mobile */
+    }
+    .head-left img {
+        width: 38px;
+        height: 38px;
+    }
+ 
+    /* Hero */
+    .hero-content {
+        left: 16px;
+        right: 16px;
+        top: 100px;
+    }
+    .hero-content h1 {
+        font-size: 26px;
+    }
+    .hero-content p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+    .hero-content a {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+ 
+    /* Abt section */
+    .abt-section {
+        height: auto;
+        min-height: auto;
+        margin-top: 30px;
+    }
+    .abt-img {
+        height: 400px;
+    }
+    .abt-grid {
+        grid-template-columns: 1fr;
+        padding: 20px 16px;
+        gap: 10px;
+    }
+    .abt-card {
+        padding: 16px;
+    }
+    .abt-card h1 {
+        font-size: 28px;
+    }
+    .abt-card p {
+        font-size: 13px;
+    }
+    .abt-card img {
+        height: 180px;
+        margin: 0 auto;
+        display: block;
+    }
+    .abt-card button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+ 
+    /* About section */
+    .about-section {
+        margin-top: 50px;
+    }
+    .about-section h1 {
+        font-size: 32px;
+        max-width: 90%;
+        margin: 16px 0;
+    }
+    .about-section p {
+        font-size: 14px;
+        margin: 20px 16px;
+    }
+ 
+    /* Faelora */
+    .faelora-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        padding: 24px 16px;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: flex-start;
+        background: linear-gradient(to top, rgba(8,8,38,0.85), transparent);
+    }
+    .faelora-section {
+        height: auto;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .faelora-content h3 {
+        font-size: 24px;
+    }
+    .faelora-content p {
+        font-size: 13px;
+    }
+ 
+    /* Characters */
+    .char-section {
+        width: 92%;
+        margin-top: 40px;
+    }
+    .char-section h3 {
+        font-size: 28px;
+    }
+    .char-cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    .card h2 {
+        font-size: 14px;
+    }
+    .card p {
+        font-size: 11px;
+        max-width: 90%;
+    }
+ 
+    /* Contact */
+    .contact-section {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .contact-section h3 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        width: 92%;
+        margin: 20px auto 0;
+        gap: 16px;
+    }
+    .contact-cards {
+        height: auto;
+        min-height: 260px;
+    }
+    .contact-cards form {
+        margin-left: 0;
+        padding: 16px;
+    }
+    input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+    }
+ 
+    /* Footer */
+    footer {
+        padding: 16px;
+        font-size: 13px;
+    }
+}
+ 
+/* =============================================
+   EXTRA SMALL — max-width: 380px
+   ============================================= */
+@media screen and (max-width: 600px) {
+    .hero-content h1 {
+        font-size: 22px;
+    }
+    .about-section h1 {
+        font-size: 26px;
+    }
+    .char-cards {
+        grid-template-columns: 1fr;
+    }
+    .abt-card h1 {
+        font-size: 22px;
+    }
+}
+ 
